@@ -1,0 +1,285 @@
+
+#navig {
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    padding: 5px;
+    width: 100%; 
+    height: auto; 
+    border-bottom: 2px solid #7ED957; 
+}
+
+
+#nav-item {
+    display: flex; 
+    justify-content: center;
+    flex-grow: 1; 
+}
+
+
+#nav-item ul {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    list-style-type: none; 
+    margin: 0;
+    padding: 0;
+}
+
+#nav-item ul li {
+    margin: 0 15px;
+}
+
+#nav-item ul li a {
+    color: #343333;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#nav-item ul li a:hover {
+    color: #7ED957;
+    cursor: pointer;
+}
+
+
+#navig img {
+    width: 160px;
+    height: auto;
+    cursor: pointer;
+}
+
+.search-container {
+    display: flex;
+    align-items: center; 
+}
+
+.search-bar {
+    padding: 12px; 
+    font-size: 18px;
+    border-radius: 4px;
+    border: none; 
+    width: 300px; 
+    border-bottom: 2px solid #0b2400;
+}
+
+.button {
+    margin-left: 10px;
+    text-decoration: none;
+    padding: 12px 24px;
+    background-color: #000000;
+    color: white;
+    border-radius: 4px;
+    border: none; 
+    border-bottom: 2px solid #7ED957; 
+}
+.button:hover {
+    background-color: #7ED957; 
+    cursor: pointer;
+}
+#Our_Services,h1{
+    font-weight: bold;
+    text-align: center;
+    padding: 5px;
+}
+#Sercices{
+    display: flex;
+    justify-content: space-between;
+}
+.service-image {
+    width: 300px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 5px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Specials {
+   
+    display: flex;
+    flex-direction: rows; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
+    gap:30px;
+}
+.service-description {
+    background-color: #7ED957;
+    color: rgb(255, 255, 255);
+    padding: 5px;
+    width: 250px;
+    height: 30px;
+    text-decoration: none;
+    font-size: 24px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto auto auto; /* Top: 10px, Right: 20px, Bottom: 30px, Left: 40px */
+}
+.service-description:hover{
+    transform: scale(1.2);
+}
+
+.Specials a {
+    text-decoration: none;
+}
+.why-jeevita {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    
+}
+
+.text-content {
+    flex: 1;
+}
+
+.text-content h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    
+}
+
+.text-content p {
+    font-size: 30px;
+    line-height: 1.6;
+    text-align: justify;
+    color: #333;
+   
+}
+
+.image-content {
+    flex: 1;
+    text-align: left;
+    justify-content: left;
+}
+
+.image-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+}
+
+.healthcare-section {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 1000px;  
+    margin: 30px auto;
+    padding: 10px;
+}
+
+.healthcare-content {
+    flex: 2;  
+    color: black; 
+}
+
+.healthcare-content h1 {
+    font-size: 30px;
+    font-weight: bold;
+    color: black; 
+    margin-bottom: 10px;
+}
+
+.healthcare-content hr {
+    border: none;
+    border-top: 2px solid #333;
+    width: 50px;
+    margin-bottom: 15px;
+}
+
+.healthcare-content ul {
+    list-style-type: circle;
+    padding-left: 20px;
+}
+
+.healthcare-content ul li {
+    margin-bottom: 15px;
+    font-size: 30px;
+    line-height: 2;
+    color: black;  
+}
+
+.healthcare-image {
+    flex: 1;
+    text-align: center;
+}
+
+.healthcare-image img {
+    width: 100%; 
+    height: auto; 
+    border-radius: 5px;
+}
+.footer {
+    background-color: #343333;  /* Dark background for the footer */
+    color: #fff;  /* White text color */
+    padding: 30px 50px;  /* Add padding to the footer */
+    margin-top: 30px;
+    border-top: 2px solid #7ED957;  /* Green border at the top */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.footer-item {
+    flex: 1;  /* Make all footer items take equal width */
+}
+
+.footer-item h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #7ED957;  /* Green color for the headings */
+}
+
+.footer-item ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-item ul li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-item ul li a {
+    color: #fff; 
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.footer-item ul li a:hover {
+    color: #7ED957;  
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+}
+
+.social-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.social-links li a:hover {
+    color: #7ED957;
+    cursor: pointer;
+}
