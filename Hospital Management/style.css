@@ -1,21 +1,25 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+    padding:0;
+    margin:0;
+  
+}
 
 #navig {
     display: flex; 
     align-items: center; 
     justify-content: space-between; 
-    padding: 5px;
-    width: 100%; 
-    height: auto; 
-    border-bottom: 2px solid #7ED957; 
+    height: 100px;
+    width:auto;
+    padding:0;
+    
+   
 }
-
-
 #nav-item {
     display: flex; 
     justify-content: center;
     flex-grow: 1; 
 }
-
 
 #nav-item ul {
     display: flex; 
@@ -24,31 +28,36 @@
     list-style-type: none; 
     margin: 0;
     padding: 0;
+    gap: 30px; 
 }
 
 #nav-item ul li {
-    margin: 0 15px;
+    margin: 15px auto auto auto; 
 }
 
 #nav-item ul li a {
     color: #343333;
     text-decoration: none;
-    padding: 10px 15px;
+    padding: 0;
     border-radius: 5px;
-    font-size: 24px;
-    font-weight: bold;
+    font-size: 18px;
+    font-weight: lighter;
+    display: flex;
 }
 
 #nav-item ul li a:hover {
-    color: #7ED957;
+    color:  #2582A1; 
     cursor: pointer;
 }
 
-
 #navig img {
-    width: 160px;
-    height: auto;
+    width: 180px; 
+    height:150px;
     cursor: pointer;
+    object-fit: cover;
+    display: flex;
+    padding: 0;
+    margin-top: 50px;
 }
 
 .search-container {
@@ -57,86 +66,165 @@
 }
 
 .search-bar {
-    padding: 12px; 
-    font-size: 18px;
+    padding: 15px;
+    font-size: 22px; 
     border-radius: 4px;
     border: none; 
-    width: 300px; 
+    width: 350px;
     border-bottom: 2px solid #0b2400;
 }
 
 .button {
-    margin-left: 10px;
+    width: 60px; 
+    height: auto;
+    display: flex;
+    margin-left: 15px; 
     text-decoration: none;
-    padding: 12px 24px;
+    padding: 7px 12px; 
+    font-size: 18px; 
+    text-align: center;
+    justify-content: center;
     background-color: #000000;
     color: white;
-    border-radius: 4px;
+    border-radius: 5px;
     border: none; 
-    border-bottom: 2px solid #7ED957; 
+    border-bottom: 2px solid  #2582A1; 
+    margin-right:10px;
 }
+
+.button a {
+    font-size: 18px; 
+    text-align: center;
+    justify-content: center;
+    padding: 7px 12px; 
+}
+
 .button:hover {
-    background-color: #7ED957; 
+    background-color: #2582A1; 
     cursor: pointer;
 }
-#Our_Services,h1{
+
+#Our_Services, h1 {
     font-weight: bold;
     text-align: center;
-    padding: 5px;
+    padding: 10px; 
 }
-#Sercices{
+
+.content {
+    width: 100%;
+    height: 600px;
+    background-color: #EDF2F6;
+    border-radius: 12px; 
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px; 
+    box-sizing: border-box;
+}
+
+#bgimage img {
+    width: 350px; 
+    height: 350px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3); 
+    margin-right: 50px; }
+
+.text-content {
+    max-width: 65%; }
+
+.text-content h1 {
+    font-size: 3rem; 
+    margin-bottom: 15px; 
+    color: #333;
+}
+
+.text-content p {
+    font-size: 22px; 
+    margin-bottom: 25px;
+    color: #555;
+}
+
+.text-content button {
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    color: white;
+    background-color: #2582A1; 
+    border: none;
+    border-radius: 6px; 
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.text-content button:hover {
+    background-color: #16556a; 
+}
+
+#Sercices {
     display: flex;
     justify-content: space-between;
 }
+
 .service-image {
-    width: 300px;
-    height: 250px;
+    width: 350px; 
+    height: 300px; 
     object-fit: cover;
-    border-radius: 5px;
+    border-radius: 6px; 
     border: 2px solid black;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .Specials {
-   
-    display: flex;
-    flex-direction: rows; 
+    width: 100%; 
     justify-content: center; 
     align-items: center; 
     text-align: center;
-    gap:30px;
+    gap: 40px; 
+    scroll-behavior: smooth; 
+    overflow-x: auto; 
+    white-space: nowrap; 
 }
+
+
 .service-description {
-    background-color: #7ED957;
-    color: rgb(255, 255, 255);
-    padding: 5px;
-    width: 250px;
-    height: 30px;
-    text-decoration: none;
-    font-size: 24px;
+    background-color:  #2582A1; 
+    color: #fff;
+    padding: 15px; 
+    width: 300px; 
+    height: auto;
+    font-size: 20px; 
     text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 10px auto auto auto; /* Top: 10px, Right: 20px, Bottom: 30px, Left: 40px */
-}
-.service-description:hover{
-    transform: scale(1.2);
+    border: none;
+    border-radius: 6px; 
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+    margin-top: 15px; }
+
+.service-description:hover {
+    transform: scale(1.1);
+    background-color:  #16556a; 
 }
 
 .Specials a {
-    text-decoration: none;
+    display: inline-block;
+    padding: 14px;
+    flex-direction: column; 
+    align-items: center;    
+    text-decoration: none;  
 }
+
 .why-jeevita {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 20px;
-    padding: 20px;
+    gap: 60px; 
+    padding: 25px; 
     max-width: 1200px;
     margin: 0 auto;
-    
+    margin-top: 25px;
 }
 
 .text-content {
@@ -144,42 +232,40 @@
 }
 
 .text-content h2 {
-    font-size: 36px;
+    font-size: 40px; 
     font-weight: bold;
-    margin-bottom: 15px;
-    
+    margin-bottom: 20px; 
 }
 
 .text-content p {
-    font-size: 30px;
-    line-height: 1.6;
+    font-size: 22px; 
+    line-height: 1.8;
     text-align: justify;
     color: #333;
-   
 }
 
 .image-content {
     flex: 1;
     text-align: left;
     justify-content: left;
+    margin-top: 25px; 
 }
 
 .image-content img {
     width: 100%;
     height: auto;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    
+    border-radius: 6px; 
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.1); 
 }
 
 .healthcare-section {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    gap: 20px;
+    gap: 50px; 
     max-width: 1000px;  
-    margin: 30px auto;
-    padding: 10px;
+    margin: 40px auto; 
+    padding: 15px; 
 }
 
 .healthcare-content {
@@ -188,28 +274,15 @@
 }
 
 .healthcare-content h1 {
-    font-size: 30px;
+    font-size: 36px; 
     font-weight: bold;
     color: black; 
-    margin-bottom: 10px;
-}
-
-.healthcare-content hr {
-    border: none;
-    border-top: 2px solid #333;
-    width: 50px;
-    margin-bottom: 15px;
-}
-
-.healthcare-content ul {
-    list-style-type: circle;
-    padding-left: 20px;
-}
+    margin-bottom: 15px;}
 
 .healthcare-content ul li {
-    margin-bottom: 15px;
-    font-size: 30px;
-    line-height: 2;
+    margin-bottom: 20px;
+    font-size: 22px; 
+    line-height: 2.2; 
     color: black;  
 }
 
@@ -221,65 +294,167 @@
 .healthcare-image img {
     width: 100%; 
     height: auto; 
-    border-radius: 5px;
-}
-.footer {
-    background-color: #343333;  /* Dark background for the footer */
-    color: #fff;  /* White text color */
-    padding: 30px 50px;  /* Add padding to the footer */
-    margin-top: 30px;
-    border-top: 2px solid #7ED957;  /* Green border at the top */
+    border-radius: 6px; 
+    margin-top: 20px;
+    margin-bottom: 20px; 
 }
 
-.footer-content {
+footer {
+    background-color: #f8f9fa;
+    padding: 40px 5%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    gap: 30px;
+    align-items: flex-start;
+    border-top: 5px solid #2582A1;
+    font-family: Arial, sans-serif;
 }
 
-.footer-item {
-    flex: 1;  /* Make all footer items take equal width */
-}
-
-.footer-item h2 {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 15px;
-    color: #7ED957;  /* Green color for the headings */
-}
-
-.footer-item ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.footer-item ul li {
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-
-.footer-item ul li a {
-    color: #fff; 
-    text-decoration: none;
-    font-size: 18px;
-}
-
-.footer-item ul li a:hover {
-    color: #7ED957;  
-}
-
-.social-links {
+.footer-left {
     display: flex;
-    gap: 15px;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 20px;
+    flex: 1;
+    min-width: 250px;
 }
 
-.social-links li a {
-    color: #fff;
+#hospital_logo img {
+    width: 180px;
+    height: auto;
+}
+
+.social-media {
+    width: 100%; 
+    text-align: left;
+    margin-top: 10px; 
+}
+
+.social-media p {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.social-media ul {
+    display: flex; 
+    gap: 15px; 
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social-media ul li {
+    display: inline; 
+}
+
+.social-media ul li a {
+    color: #333; 
     text-decoration: none;
-    font-size: 20px;
+    font-size: 16px;
+    transition: transform 0.3s ease-in-out;
 }
 
-.social-links li a:hover {
-    color: #7ED957;
+.social-media ul li a:hover {
+    transform: scale(1.2);
     cursor: pointer;
+    color: #2582A1; 
+}
+
+.footer-links {
+    display: flex;
+    flex: 2;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 50px; /
+}
+
+.footer-links .column {
+    display: flex;
+    flex-direction: column;
+    min-width: 180px;
+}
+
+.footer-links .heading {
+    font-weight: bold;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    color:#2582A1;
+}
+
+.footer-links ul li {
+    font-size: 18px; 
+    font-weight: 600; 
+    padding: 10px 0; 
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    
+}
+
+.footer-links ul li:hover {
+   
+    color: #2582A1;
+}
+
+
+.newsletter {
+    flex: 1;
+    max-width: 300px;
+}
+
+.newsletter form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.newsletter input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.newsletter button {
+    background-color: #2582A1;
+    color: white;
+    padding: 10px 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.newsletter button:hover {
+    background-color: #1e6b89;
+}
+
+
+.privacy {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.privacy ul {
+    display: flex;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.privacy a {
+    color: #333; 
+    text-decoration: none;
+    padding: 10px;
+    font-size: 16px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.privacy a:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+    color: #2582A1; 
 }
