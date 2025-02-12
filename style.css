@@ -4,7 +4,19 @@
     margin:0;
   
 }
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
 
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;  
+}
+.content {
+    flex-grow: 1;  }
 #navig {
     display: flex; 
     align-items: center; 
@@ -300,6 +312,7 @@
 }
 
 footer {
+    margin-top: auto;  
     background-color: #f8f9fa;
     padding: 40px 5%;
     display: flex;
@@ -308,6 +321,7 @@ footer {
     align-items: flex-start;
     border-top: 5px solid #2582A1;
     font-family: Arial, sans-serif;
+    font-weight: 100;
 }
 
 .footer-left {

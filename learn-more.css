@@ -1,18 +1,38 @@
 * {
     font-family: 'Open Sans', sans-serif;
+    padding:0;
+    margin:0;
+    height: 100%;
+  
 }
 html, body {
     height: 100%;
     margin: 0;
+    padding: 0;
+}
+
+.container {
     display: flex;
     flex-direction: column;
+    min-height: 100vh;  /* Ensures the full height of the viewport is used */
 }
+
+.content {
+    flex-grow: 1;  /* Makes sure the content area takes up remaining space */
+}
+
+
+
+
+
 #navig {
     display: flex; 
     align-items: center; 
     justify-content: space-between; 
-    padding: 10px; 
-    height: 120px; 
+    height: 100px;
+    width:auto;
+    padding:0;
+    
    
 }
 #nav-item {
@@ -46,15 +66,18 @@ html, body {
 }
 
 #nav-item ul li a:hover {
-    color: #7ED957;
+    color:  #2582A1; 
     cursor: pointer;
 }
 
 #navig img {
     width: 180px; 
-    height: 120px;
+    height:150px;
     cursor: pointer;
     object-fit: cover;
+    display: flex;
+    padding: 0;
+    margin-top: 50px;
 }
 
 .search-container {
@@ -85,7 +108,7 @@ html, body {
     color: white;
     border-radius: 5px;
     border: none; 
-    border-bottom: 2px solid #7ED957; 
+    border-bottom: 2px solid  #2582A1; 
     margin-right:10px;
 }
 
@@ -97,81 +120,166 @@ html, body {
 }
 
 .button:hover {
-    background-color: #7ED957; 
+    background-color: #2582A1; 
     cursor: pointer;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.footer {
-    background-color: #343333;  
-    color: #fff;  
-    padding: 40px 60px; 
-    margin-top: 40px; 
-    border-top: 3px solid #7ED957;
-    position: fixed;
-}
-
-.footer-content {
+footer {
+    margin-top: auto;  /* This makes the footer push to the bottom */
+    background-color: #f8f9fa;
+    padding: 40px 5%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    gap: 40px; }
-
-.footer-item {
-    flex: 1; 
+    align-items: flex-start;
+    border-top: 5px solid #2582A1;
+    font-family: Arial, sans-serif;
 }
 
-.footer-item h2 {
-    font-size: 28px; 
-    font-weight: bold;
-    margin-bottom: 20px; 
-    color: #7ED957;  
-}
-
-.footer-item ul li {
-    font-size: 20px; 
-    margin-bottom: 12px; 
-}
-
-.footer-item ul li a {
-    color: #fff; 
-    text-decoration: none;
-    font-size: 20px; 
-}
-
-.footer-item ul li a:hover {
-    color: #7ED957;  
-}
-
-.social-links {
+.footer-left {
     display: flex;
-    gap: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 20px;
+    flex: 1;
+    min-width: 250px;
 }
 
-.social-links li a {
-    color: #fff;
+#hospital_logo img {
+    width: 180px;
+    height: auto;
+}
+
+.social-media {
+    width: 100%; 
+    text-align: left;
+    margin-top: 10px; 
+}
+
+.social-media p {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.social-media ul {
+    display: flex; 
+    gap: 15px; 
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social-media ul li {
+    display: inline; 
+}
+
+.social-media ul li a {
+    color: #333; 
     text-decoration: none;
-    font-size: 22px; 
+    font-size: 16px;
+    transition: transform 0.3s ease-in-out;
 }
 
-.social-links li a:hover {
-    color: #7ED957;
+.social-media ul li a:hover {
+    transform: scale(1.2);
     cursor: pointer;
+    color: #2582A1; 
+}
+
+.footer-links {
+    display: flex;
+    flex: 2;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 50px; /
+}
+
+.footer-links .column {
+    display: flex;
+    flex-direction: column;
+    min-width: 180px;
+}
+
+.footer-links .heading {
+    font-weight: bold;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    color:#2582A1;
+}
+
+.footer-links ul li {
+    font-size: 18px; 
+    font-weight: 600; 
+    padding: 10px 0; 
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    
+}
+
+.footer-links ul li:hover {
+   
+    color: #2582A1;
+}
+
+
+.newsletter {
+    flex: 1;
+    max-width: 300px;
+}
+
+.newsletter form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.newsletter input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.newsletter button {
+    background-color: #2582A1;
+    color: white;
+    padding: 10px 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.newsletter button:hover {
+    background-color: #1e6b89;
+}
+
+
+.privacy {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.privacy ul {
+    display: flex;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.privacy a {
+    color: #333; 
+    text-decoration: none;
+    padding: 10px;
+    font-size: 16px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.privacy a:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+    color: #2582A1; 
 }
