@@ -2,7 +2,6 @@
     font-family: 'Open Sans', sans-serif;
     padding:0;
     margin:0;
-    height: 100%;
   
 }
 html, body {
@@ -14,27 +13,23 @@ html, body {
 .container {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;  /* Ensures the full height of the viewport is used */
+    min-height: 100vh;  
 }
-
 .content {
-    flex-grow: 1;  /* Makes sure the content area takes up remaining space */
-}
-
-
-
-
-
-#navig {
-    display: flex; 
-    align-items: center; 
-    justify-content: space-between; 
-    height: 100px;
-    width:auto;
-    padding:0;
+    flex-grow: 1; 
+ }
+ #navig {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 150px;
+    width: auto;
+    padding: 0; 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
     
-   
 }
+
+    
 #nav-item {
     display: flex; 
     justify-content: center;
@@ -77,7 +72,7 @@ html, body {
     object-fit: cover;
     display: flex;
     padding: 0;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 .search-container {
@@ -123,8 +118,100 @@ html, body {
     background-color: #2582A1; 
     cursor: pointer;
 }
+
+#Our_Services, h1 {
+    font-weight: bold;
+    text-align: center;
+    padding: 10px; 
+}
+
+.content {
+    width: 100%;
+    height: 100vh;
+    background-color: #EDF2F6;
+    border-radius: 12px; 
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px; 
+    box-sizing: border-box;
+}
+
+* {box-sizing:border-box}
+.slideshow-container {
+    width: 100%; 
+    max-width: 800px;
+    height: 450px;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+    margin-top: 50px;
+    border-radius:5px;
+}
+
+.mySlides {
+    position: absolute;
+    width: 100%;
+    opacity: 0;
+    transform: translateX(100%);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+.mySlides.active {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 10px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.6s ease;
+    user-select: none;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.next {
+    right: 0;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.dot {
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    margin: 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
 footer {
-    margin-top: auto;  /* This makes the footer push to the bottom */
+    margin-top: auto;  
     background-color: #f8f9fa;
     padding: 40px 5%;
     display: flex;
@@ -133,6 +220,7 @@ footer {
     align-items: flex-start;
     border-top: 5px solid #2582A1;
     font-family: Arial, sans-serif;
+    font-weight: 100;
 }
 
 .footer-left {

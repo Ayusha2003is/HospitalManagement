@@ -17,16 +17,17 @@ html, body {
 }
 .content {
     flex-grow: 1;  }
-#navig {
-    display: flex; 
-    align-items: center; 
-    justify-content: space-between; 
-    height: 100px;
-    width:auto;
-    padding:0;
+    #navig {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 150px;
+        width: auto;
+        padding: 0; 
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
+        
+    }
     
-   
-}
 #nav-item {
     display: flex; 
     justify-content: center;
@@ -69,7 +70,7 @@ html, body {
     object-fit: cover;
     display: flex;
     padding: 0;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 .search-container {
