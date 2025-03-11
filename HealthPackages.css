@@ -1,0 +1,392 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+    padding:0;
+    margin:0;
+  
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;  
+}
+.content {
+    flex-grow: 1;  }
+    #navig {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 150px;
+        width: auto;
+        padding: 0; 
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
+        
+    }
+    
+#nav-item {
+    display: flex; 
+    justify-content: center;
+    flex-grow: 1; 
+}
+
+#nav-item ul {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    list-style-type: none; 
+    margin: 0;
+    padding: 0;
+    gap: 30px; 
+}
+
+#nav-item ul li {
+    margin: 15px auto auto auto; 
+}
+
+#nav-item ul li a {
+    color: #343333;
+    text-decoration: none;
+    padding: 0;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: lighter;
+    display: flex;
+}
+
+#nav-item ul li a:hover {
+    color:  #2582A1; 
+    cursor: pointer;
+}
+
+#navig img {
+    width: 180px; 
+    height:150px;
+    cursor: pointer;
+    object-fit: cover;
+    display: flex;
+    padding: 0;
+    margin-top: 30px;
+}
+
+.search-container {
+    display: flex;
+    align-items: center; 
+}
+
+.search-bar {
+    padding: 15px;
+    font-size: 22px; 
+    border-radius: 4px;
+    border: none; 
+    width: 350px;
+    border-bottom: 2px solid #0b2400;
+}
+
+.button {
+    width: 60px; 
+    height: auto;
+    display: flex;
+    margin-left: 15px; 
+    text-decoration: none;
+    padding: 7px 12px; 
+    font-size: 18px; 
+    text-align: center;
+    justify-content: center;
+    background-color: #000000;
+    color: white;
+    border-radius: 5px;
+    border: none; 
+    border-bottom: 2px solid  #2582A1; 
+    margin-right:10px;
+}
+
+.button a {
+    font-size: 18px; 
+    text-align: center;
+    justify-content: center;
+    padding: 7px 12px; 
+}
+
+.button:hover {
+    background-color: #2582A1; 
+    cursor: pointer;
+}
+
+
+#health-packages {
+    padding: 50px 5%;
+    background-color: #f4f6f7;
+    text-align: center;
+}
+
+#health-packages h1 {
+    font-size: 36px;
+    color: #2582A1;
+    margin-bottom: 30px;
+}
+
+#health-packages p {
+    font-size: 18px;
+    color: #2582A1; 
+    font-weight:bold;
+    margin-bottom: 40px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    letter-spacing: 1px; /* Adds spacing between letters */
+    line-height: 1.6; /* Improves readability */
+    font-weight: 500; /* Slightly bolder for emphasis */
+}
+
+
+.packages-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+.package-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;  
+    justify-content: space-between;
+    background-color: #fff;
+    border: 2px solid #2582A1;
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%; /* Make it responsive */
+    max-width: 600px; /* Optional: Adjust based on your design */
+    min-height: 350px; /* Increase height to fit text */
+    gap: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+
+.package-card img {
+    width: 300px;  /* Reduce width */
+    height: 250px; /* Reduce height */
+    object-fit: cover; 
+    border-radius: 10px;
+    flex-shrink: 0;
+}
+
+
+
+.package-info {
+    flex-grow: 1;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden; /* Prevents overflow */
+    max-width: 50%; /* Ensures text doesn't shrink too much */
+}
+.package-info h2, .package-info p {
+    word-wrap: break-word;
+    white-space: normal;
+}
+
+.package-card {
+    min-height: 200px; /* Adjust as needed */
+}
+
+
+.package-info h2 {
+    font-size: 22px;
+    color: #2582A1;
+    margin-bottom: 10px;
+}
+
+.package-info p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.package-info .button {
+    display: block;
+    width: 140px;
+    margin: 15px auto 0;
+    background-color: #2582A1;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    text-align: center;
+}
+
+.package-info .button:hover {
+    background-color: #1e6b89;
+}
+
+
+
+footer {
+    margin-top: auto;  
+    background-color: #f8f9fa;
+    padding: 40px 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-top: 5px solid #2582A1;
+    font-family: Arial, sans-serif;
+    font-weight: 100;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 20px;
+    flex: 1;
+    min-width: 250px;
+}
+
+#hospital_logo img {
+    width: 180px;
+    height: auto;
+}
+
+.social-media {
+    width: 100%; 
+    text-align: left;
+    margin-top: 10px; 
+}
+
+.social-media p {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.social-media ul {
+    display: flex; 
+    gap: 15px; 
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social-media ul li {
+    display: inline; 
+}
+
+.social-media ul li a {
+    color: #333; 
+    text-decoration: none;
+    font-size: 16px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-media ul li a:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+    color: #2582A1; 
+}
+
+.footer-links {
+    display: flex;
+    flex: 2;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 50px; /
+}
+
+.footer-links .column {
+    display: flex;
+    flex-direction: column;
+    min-width: 180px;
+}
+
+.footer-links .heading {
+    font-weight: bold;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    color:#2582A1;
+}
+
+.footer-links ul li {
+    font-size: 18px; 
+    font-weight: 600; 
+    padding: 10px 0; 
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    
+}
+
+.footer-links ul li:hover {
+   
+    color: #2582A1;
+}
+
+
+.newsletter {
+    flex: 1;
+    max-width: 300px;
+}
+
+.newsletter form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.newsletter input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.newsletter button {
+    background-color: #2582A1;
+    color: white;
+    padding: 10px 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.newsletter button:hover {
+    background-color: #1e6b89;
+}
+
+
+.privacy {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.privacy ul {
+    display: flex;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.privacy a {
+    color: #333; 
+    text-decoration: none;
+    padding: 10px;
+    font-size: 16px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.privacy a:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+    color: #2582A1; 
+}

@@ -1,0 +1,472 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+    padding:0;
+    margin:0;
+  
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;  
+}
+.content {
+    flex-grow: 1; 
+ }
+ 
+ #navig {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 150px;
+    width: auto;
+    padding: 0; 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
+}
+
+    
+#nav-item {
+    display: flex; 
+    justify-content: center;
+    flex-grow: 1; 
+}
+
+#nav-item ul {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    list-style-type: none; 
+    margin: 0;
+    padding: 0;
+    gap: 30px; 
+}
+
+#nav-item ul li {
+    margin: 15px auto auto auto; 
+}
+
+#nav-item ul li a {
+    color: #343333;
+    text-decoration: none;
+    padding: 0;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: lighter;
+    display: flex;
+}
+
+#nav-item ul li a:hover {
+    color:  #2582A1; 
+    cursor: pointer;
+}
+
+#navig img {
+    width: 180px; 
+    height:150px;
+    cursor: pointer;
+    object-fit: cover;
+    display: flex;
+    padding: 0;
+    margin-top: 30px;
+}
+
+.search-container {
+    display: flex;
+    align-items: center; 
+}
+
+.search-bar {
+    padding: 15px;
+    font-size: 22px; 
+    border-radius: 4px;
+    border: none; 
+    width: 350px;
+    border-bottom: 2px solid #0b2400;
+}
+
+.button {
+    width: 100px;
+    height: auto;
+    display: flex;
+    margin-left: 15px;
+    text-decoration: none;
+    padding: 7px 12px; 
+    font-size: 18px; 
+    text-align: center;
+    justify-content: center;
+    background-color: #000000;
+    color: white;
+    border-radius: 5px;
+    border: none; 
+    border-bottom: 2px solid  #2582A1; 
+    margin-right:10px;
+}
+
+.button a {
+    font-size: 18px; 
+    text-align: center;
+    justify-content: center;
+    padding: 7px 12px; 
+}
+
+.button:hover {
+    background-color: #2582A1; 
+    cursor: pointer;
+}
+.child-healthcare {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 10%;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin: 50px auto;
+}
+
+.child-healthcare .content {
+    flex: 1 1 50%;
+    padding-right: 30px;
+}
+
+.child-healthcare h2 {
+    font-size: 2.4rem; /* Larger main heading */
+    color: #2582A1;
+    margin-bottom: 20px;
+}
+
+.child-healthcare h3 {
+    font-size: 1.8rem; /* Larger subheading */
+    margin-top: 25px;
+    color: #444;
+}
+
+.child-healthcare p {
+    font-size: 1.2rem; /* Larger paragraph text */
+    line-height: 1.9;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.child-healthcare ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.child-healthcare ul li {
+    font-size: 1.2rem; /* Larger list items */
+    color: #333;
+    margin-bottom: 12px;
+    position: relative;
+    padding-left: 30px;
+}
+
+.child-healthcare ul li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #2582A1;
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+.child-image {
+    flex: 1 1 40%;
+    max-width: 480px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    margin-top: 25px;
+}
+
+
+
+
+.hero {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: #f0f8ff;
+    flex-wrap: wrap;  /* Allow content to wrap */
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.hero-content h1 {
+    font-size: 42px;
+    color: #2582A1;
+    margin-bottom: 15px;
+}
+
+.hero-content p {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 15px;
+    line-height: 1.5;  
+    flex-grow: 1;  
+}
+
+.hero-image {
+    width: 45%;
+    border-radius: 8px;
+}
+
+
+.services {
+    padding: 50px 10%;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 36px;
+    color: #2582A1;
+    margin-bottom: 40px;
+}
+
+.service-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 30%;
+    text-align: left;
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    font-size: 24px;
+    color: #2582A1;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 16px;
+    color: #555;
+}
+
+.why-choose {
+    padding: 50px 10%;
+    background-color: #eaf7fb;
+}
+
+.why-choose h2 {
+    font-size: 32px;
+    color: #2582A1;
+    margin-bottom: 20px;
+}
+
+.why-choose ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.why-choose ul li {
+    font-size: 18px;
+    padding: 10px 0;
+    color: #333;
+}
+.appointment-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 25px;
+    background-color: #2582A1;
+    color: white;
+    font-size: 18px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.appointment-btn:hover {
+    background-color: #1a5c78;
+    transform: scale(1.05);
+}
+
+footer {
+    margin-top: auto;  
+    background-color: #f8f9fa;
+    padding: 40px 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-top: 5px solid #2582A1;
+    font-family: Arial, sans-serif;
+    font-weight: 100;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 20px;
+    flex: 1;
+    min-width: 250px;
+}
+
+#hospital_logo img {
+    width: 180px;
+    height: auto;
+}
+
+.social-media {
+    width: 100%; 
+    text-align: left;
+    margin-top: 10px; 
+}
+
+.social-media p {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.social-media ul {
+    display: flex; 
+    gap: 15px; 
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social-media ul li {
+    display: inline; 
+}
+
+.social-media ul li a {
+    color: #333; 
+    text-decoration: none;
+    font-size: 16px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-media ul li a:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+    color: #2582A1; 
+}
+
+.footer-links {
+    display: flex;
+    flex: 2;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 50px; /
+}
+
+.footer-links .column {
+    display: flex;
+    flex-direction: column;
+    min-width: 180px;
+}
+
+.footer-links .heading {
+    font-weight: bold;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    color:#2582A1;
+}
+
+.footer-links ul li {
+    font-size: 18px; 
+    font-weight: 600; 
+    padding: 10px 0; 
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    
+}
+
+.footer-links ul li:hover {
+   
+    color: #2582A1;
+}
+
+
+.newsletter {
+    flex: 1;
+    max-width: 300px;
+}
+
+.newsletter form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.newsletter input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.newsletter button {
+    background-color: #2582A1;
+    color: white;
+    padding: 10px 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.newsletter button:hover {
+    background-color: #1e6b89;
+}
+
+
+.privacy {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.privacy ul {
+    display: flex;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.privacy a {
+    color: #333; 
+    text-decoration: none;
+    padding: 10px;
+    font-size: 16px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.privacy a:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+    color: #2582A1; 
+}
